@@ -1,0 +1,80 @@
+/*The container*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ysabeau Infant', sans-serif;
+    text-align: center;
+    gap: 2rem;
+    height: 100vh; 
+}
+
+/*Boxes for pricing*/
+.pricing{
+    flex: 1;
+    border-radius: 5px;
+    background-color: #FFBDF7;
+    max-width: 350px;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Type/Name of the plan*/
+.price-title{
+    font-size: 20pt;
+    font-weight: bold;
+    color: #FFECEC;
+    margin-bottom: 10px;
+}
+
+/*Price of the plan*/
+.plan-price{ 
+    font-size: 25pt;
+    font-weight: bolder;
+    color: #FFECEC;
+}
+
+/*Button for selecting the plan*/
+.pricing-button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFECEC;
+    color: #FF78C4;
+    font-size: 10pt;
+}
+
+/*Plan's features -- offers*/
+.features{
+    list-style: none;
+    color: #FFECEC;
+}
+
+/*Description of the each offer*/
+.description{
+    font-style: italic;
+    font-size: 14pt;
+    color: #FFECEC;;
+}
+
+span{
+    font-size: smaller;
+}
+
+/*Making it responsive*/
+@media (max-width: 1250px){
+    *{
+        font-size: 20pt;
+    }
+
+    .container{
+        flex-direction: column;
+        height: 100%;
+        max-width: 100%;
+    }
+
+    .pricing{
+        width:60%;
+    }
+}
+
