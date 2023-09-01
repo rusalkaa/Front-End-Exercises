@@ -1,0 +1,261 @@
+html, body{
+    height: 100%;
+}
+
+h1{
+    letter-spacing: 5px;
+}
+.hero-image{
+    background-image: url("./neon-light.jpg");
+    height: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text{
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+ 
+}
+
+.container {
+    display: grid;
+    
+    gap: 10%;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 25% 25% 25%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+
+}
+
+.contact{
+    grid-row: span 4;
+    border-right: 1px solid black;
+}
+
+.profile-pic{
+    height: 300px;
+}
+
+.education, .experience, .skills, .hobbies, .languages, .contact, .about{
+    padding: 10px;
+    text-align: left;
+    font-family: 'Urbanist', sans-serif;
+    width:400px;
+}
+
+
+.education{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#digital{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.skills{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    
+}
+
+.hobbies{
+    grid-column-start:2;
+}
+
+
+.footer {
+    height: 20%;
+    width: 100%;
+    margin-top: 55px;
+    display: flex;
+    font-family: 'Urbanist', sans-serif;
+    background-image: url("./neon-light.jpg");
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px ){
+    h1{
+        font-size: 20px;
+    }
+
+    .hero-image{
+        min-width: 350px;
+        max-width: 600px;
+    }
+
+    .container {
+        display: inline-block;
+        gap: 10px;
+        margin-top: 2px;
+        margin-bottom: 5px;
+        font-size: medium;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .contact{
+        border-bottom: 1px solid black;
+        border-right: none;
+        width: 75%;
+    }
+
+    .education{
+        width: 75%;
+    }
+
+    .experience{
+        width: 50%;
+    }
+
+    .profile-pic{
+        height: 150px;
+    }
+
+    .footer{
+        height: 10%;
+        min-width: 350px;
+        font-size: smaller;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media all and (min-width: 600px){
+    body{
+        font-size: 15px;
+    }
+    .hero-text{
+        font-size: 1 rem;
+    }
+
+    .container {
+        display: inline-block;
+        width: 100%;
+        margin-top: 30px;
+        font-size: 8 pt;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .contact{
+        width: 80%;
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+
+    .profile-pic{
+        height: 150px;
+    }
+
+    .footer{
+        height: 10%;
+        font-size: smaller;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media all and (min-width: 768px) {
+ 
+    .container {
+        gap: 10px;
+        margin-top: 5%;
+        font-size: 2 pt;
+    
+    }
+    
+    .footer{
+        height: 10%;
+        font-size: small;
+    }
+
+}
+
+/*laptop/desktops*/
+@media only screen and (min-width: 992px) {
+    .profile-pic{
+        height: 200px;
+    }
+    .hero-image{
+        min-width: 1200px;
+    }
+    .container{
+        display: grid;
+        gap: 10px;
+        width: 90%;
+        font-size: medium;
+    }
+
+    .contact{
+        border-bottom: none;
+        border-right: 1px solid black;
+        margin-left: 30px;
+    }
+
+    .footer{
+        font-size: medium;
+        min-width: 1200px;
+    }
+
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media all and (min-width: 1200px) {
+    body{
+        font-size: 18pt;
+    }
+
+    .container {
+        display: grid;
+        gap: 30px;
+        margin-top: 5%;
+        font-size: 70%;
+        width: 65%;
+    }
+
+    .contact{
+        border-bottom: none;
+        border-right: 1px solid black;
+        width: 80%;
+    }
+
+    .hero-image{
+        width: 100%;
+    }
+
+    .footer{
+        height: 10%;
+        font-size: medium;
+    }
+}
+
