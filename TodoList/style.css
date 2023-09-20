@@ -1,0 +1,34 @@
+.container{
+  width: 35%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: left;
+}
+
+body{
+    font-family: 'Mooli', sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1495987976467-244d20b4b39a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
+}
+
+h1{
+    font-family: 'Croissant One', cursive;
+    color: #F2BED1;
+}
+
+button {
+    border-radius: 5%;
+    border: none;
+    background-color: #FDCEDF;
+    padding: 5px;
+    font-family: 'Mooli', sans-serif;
+}
+
+#new-todo{
+    padding: 5px;
+}
+
+.list {
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
